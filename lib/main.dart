@@ -31,19 +31,19 @@ class _MyHomePageState extends State<MyHomePage> {
               child: FlatButton(
                 onPressed: () {
                   setState(() {
-                    seciliButon = 'SOL';
+                    seciliButon = 'ÜST';
                   });
                   print('$seciliButon buton tıklandı');
                 },
                 child: Container(
                   width: 300,
                   height: 100,
-                  color: seciliButon == 'SOL'
+                  color: seciliButon == 'ÜST'
                       ? Colors.blueAccent
                       : Colors.blueGrey,
                   child: Center(
                     child: Text(
-                      seciliButon == 'SOL' ? 'AKTİF' : 'PASİF',
+                      seciliButon == 'ÜST' ? 'AKTİF' : 'PASİF',
                       style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
@@ -59,19 +59,19 @@ class _MyHomePageState extends State<MyHomePage> {
               child: FlatButton(
                 onPressed: () {
                   setState(() {
-                    seciliButon = 'SAĞ';
+                    seciliButon = 'ALT';
                   });
                   print('$seciliButon buton tıklandı');
                 },
                 child: Container(
                   width: 300,
                   height: 100,
-                  color: seciliButon == 'SAĞ'
+                  color: seciliButon == 'ALT'
                       ? Colors.blueAccent
                       : Colors.blueGrey,
                   child: Center(
                     child: Text(
-                      seciliButon == 'SAĞ' ? 'AKTİF' : 'PASİF',
+                      seciliButon == 'ALT' ? 'AKTİF' : 'PASİF',
                       style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
@@ -89,6 +89,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   setState(() {
                     seciliButon = ''; /** Sıfırlama **/
                   });
+                  print('Sıfırlama yapıldı');
                 },
                 child: Container(
                   width: 300,
