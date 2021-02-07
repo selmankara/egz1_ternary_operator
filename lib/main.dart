@@ -34,12 +34,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 print('$seciliButon buton tıklandı');
               },
               child: Container(
-                width: 100,
-                height: 200,
+                width: 150,
+                height: 300,
                 color:
-                seciliButon == 'SOL' ? Colors.blueAccent : Colors.blueGrey,
-                child:
-                Text(seciliButon == 'SOL' ? 'AKTİF BUTON' : 'PASİF BUTON'),
+                    seciliButon == 'SOL' ? Colors.blueAccent : Colors.blueGrey,
+                child: Center(
+                  child: Text(
+                    seciliButon == 'SOL' ? 'AKTİF' : 'PASİF',
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
               ),
             ),
             FlatButton(
@@ -50,12 +58,20 @@ class _MyHomePageState extends State<MyHomePage> {
                 print('$seciliButon buton tıklandı');
               },
               child: Container(
-                width: 100,
-                height: 200,
+                width: 150,
+                height: 300,
                 color:
-                seciliButon == 'SAĞ' ? Colors.blueAccent : Colors.blueGrey,
-                child:
-                Text(seciliButon == 'SAĞ' ? 'AKTİF BUTON' : 'PASİF BUTON'),
+                    seciliButon == 'SAĞ' ? Colors.blueAccent : Colors.blueGrey,
+                child: Center(
+                  child: Text(
+                    seciliButon == 'SAĞ' ? 'AKTİF' : 'PASİF',
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
               ),
             )
           ],
