@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(TernaryEgzersizi());
 
-class MyApp extends StatelessWidget {
+class TernaryEgzersizi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: Container(
                   width: 300,
-                  height: 150,
+                  height: 100,
                   color: seciliButon == 'SOL'
                       ? Colors.blueAccent
                       : Colors.blueGrey,
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 },
                 child: Container(
                   width: 300,
-                  height: 150,
+                  height: 100,
                   color: seciliButon == 'SAĞ'
                       ? Colors.blueAccent
                       : Colors.blueGrey,
@@ -77,6 +77,27 @@ class _MyHomePageState extends State<MyHomePage> {
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: FlatButton(
+                onPressed: () {
+                  setState(() {
+                    seciliButon = ''; /** Sıfırlama **/
+                  });
+                },
+                child: Container(
+                  width: 300,
+                  height: 50,
+                  color: Colors.red,
+                  child: Center(
+                    child: Text(
+                      'RESET',
+                      style: TextStyle(fontSize: 20, color: Colors.white),
                     ),
                   ),
                 ),
